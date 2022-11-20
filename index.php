@@ -1,9 +1,6 @@
 <?php
 session_start();
 include 'Servidor/conexion.php';
-
-
-
 ?>
 
 <!DOCTYPE html>
@@ -97,7 +94,7 @@ include 'Servidor/conexion.php';
                     break;
                     
                     case "ADMINISTRADOR":		
-                    header("Location: Cliente/templates/sistemas_admin_pendientes.php");
+                    header('Location: http://www.hostinger.com/');
                     break;
                     
                     case "ACCESO":		
