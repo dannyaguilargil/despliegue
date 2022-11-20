@@ -1,7 +1,6 @@
 <?php
 session_start();
 include 'Servidor/conexion.php';
-
   if(isset($_POST['login'])){
         $nombre = trim($_POST['nombre']);
         $password = trim($_POST['password']); // trim elimina espacios en blancos
@@ -54,7 +53,6 @@ include 'Servidor/conexion.php';
     }           
 }
 ?>
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -68,8 +66,6 @@ include 'Servidor/conexion.php';
     <title>Iniciar Sesion</title>
 </head>
 <body">
- 
-
 <div class="centrar">
        
             <div class="imagen">
@@ -93,36 +89,20 @@ include 'Servidor/conexion.php';
             </div> <br>
             <p><a  class="TT1" href="Cliente/templates/login_acceso.php" id="" style="color: grey;">Solicitar usuario</a></p>
             </form>
-            
-          
           </div>
         </div>
 </div>
-
-
-
 <div class="izquierdo">
-    
     <img class="izquierdoimg" src="Cliente/imgs/izquierdo.gif" alt="">
 </div>
-
-
 <div class="escudo">
     
     <img class="escudoverde" src="Cliente/imgs/escudo.gif" alt="">
 </div>
- 
-
-
-<footer >
-        
+<footer >      
 <div class="container ultimo">
-
 <img class="fondo" src="Cliente/imgs/footer.png" alt="" srcset="">
-
-</div>
-            
-        
+</div>      
 </footer>
 </body>
 </html>
