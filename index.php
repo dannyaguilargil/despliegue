@@ -1,13 +1,12 @@
 <?php
 session_start();
 include 'Servidor/conexion.php';
-  if(isset($_POST['login'])){
-        $nombre = trim($_POST['nombre']);
-        $password = trim($_POST['password']); // trim elimina espacios en blancos
-
-        $select = mysqli_query($db, "SELECT nombre,password,rol FROM usuarios_registrados WHERE nombre = '$nombre' AND password = '$password'");
-        $num_row = mysqli_num_rows($select);
-        $row = mysqli_fetch_array($select);
+if(isset($_POST['login'])){
+$nombre = trim($_POST['nombre']);
+$password = trim($_POST['password']); // trim elimina espacios en blancos
+$select = mysqli_query($db, "SELECT nombre,password,rol FROM usuarios_registrados WHERE nombre = '$nombre' AND password = '$password'");
+$num_row = mysqli_num_rows($select);
+$row = mysqli_fetch_array($select);
         
             
 
@@ -47,9 +46,7 @@ include 'Servidor/conexion.php';
                     echo 'alert("ACCESO DENEGADO")';
                     echo '</script>';
                     
-                }
-     
-        
+                }  
     }           
 }
 ?>
@@ -79,11 +76,6 @@ include 'Servidor/conexion.php';
             <input type="text" class="form-control" name="nombre" id="nombre" required><br>
             <label class="TT" form="password">Contraseña</label>
             <input type="password" class="form-control" name="password" id="password" required><br>
-            
-
-
-
-            
             <div class="boton">
             <input type="submit" class="text-center btn btn-success" name="login" value="login">
             </div> <br>
