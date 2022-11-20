@@ -8,14 +8,14 @@ $bd =  'sistema_nuevo';
 */
 
 
-//$localhost = $_ENV["$localhost"];
-//$usuario = $_ENV["$usuario"];
-//$password = $_ENV["$password"];
-//$bd =  $_ENV["$bd"];
-//$port =  $_ENV["$port"];
+$MYSQLHOST = $_ENV["$MYSQLHOST"];
+$MYSQLUSER = $_ENV["$usuario"];
+$MYSQLPASSWORD = $_ENV["$password"];
+$MYSQLDATABASE = $_ENV["$bd"];
+$MYSQLPORT = $_ENV["$port"];
 
 //archivo mysqli configurado
-//$mysqli = new mysqli("$localhost", "$usuario", "$password", "$bd", "$port");
+$mysqli = new mysqli("$MYSQLHOST", "$MYSQLUSER", "$MYSQLPASSWORD", "$MYSQLDATABASE", "$MYSQLPORT");
 
 if(!$mysqli) {
         echo "ERROR AL CONECTAR A LA BASE DE DATOS";
