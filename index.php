@@ -1,6 +1,7 @@
 <?php
 session_start();
 include 'Servidor/conexion.php';
+ob_start();
 if(isset($_POST['login'])){
 $nombre = trim($_POST['nombre']);
 $password = trim($_POST['password']); // trim elimina espacios en blancos
