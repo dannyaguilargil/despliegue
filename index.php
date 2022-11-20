@@ -8,46 +8,34 @@ $select = mysqli_query($db, "SELECT nombre,password,rol FROM usuarios_registrado
 $num_row = mysqli_num_rows($select);
 $row = mysqli_fetch_array($select);
         
+if($num_row == 1){
+$_SESSION['nombre']=$row['nombre'];
+$_SESSION['rol']=$row['rol'];
+if(isset($_SESSION['rol'])){
+switch ($_SESSION['rol']) {
+case "":		
+header("Location: Cliente/templates/sistemas_solicitud_usuario.php");
+break;
             
-
-        if($num_row == 1){
-            $_SESSION['nombre']=$row['nombre'];
-            $_SESSION['rol']=$row['rol'];
-            //header("Location: index2.php");
- 
-
-            if (isset($_SESSION['rol'])){
-
-                switch ($_SESSION['rol']) {
+case "SUPERVISOR":		
+header("Location: Cliente/templates/sistemas_supervisor.php");
+break;
                     
-                    case "":		
-                    header("Location: Cliente/templates/sistemas_solicitud_usuario.php");
-                    break;
-            
-                    case "SUPERVISOR":		
-                    header("Location: Cliente/templates/sistemas_supervisor.php");
-                    break;
+case "ADMINISTRADOR":		
+header('Location: http://www.hostinger.com/');
+break;
                     
-                    case "ADMINISTRADOR":		
-                    header('Location: http://www.hostinger.com/');
-                    break;
-                    
-                    case "ACCESO":		
-                    header("Location: Cliente/templates/pazysalvo_acceso.php");
-                    break;
+case "ACCESO":		
+header("Location: Cliente/templates/pazysalvo_acceso.php");
+break;
+} 
+}else{
 
-                } 
-
-                }else{
-
-                    //HACE FALTA HACER LA VALIDACION Y NOTIFICAR SI EL USUARIO ESTA MAL Y SI NO ES ADMIN
-                    // SACARLO DE LOS PERMISOS DEL FORMULARIO
-                    echo '<script type ="text/JavaScript">';
-                    echo 'alert("ACCESO DENEGADO")';
-                    echo '</script>';
-                    
-                }  
-    }           
+echo '<script type ="text/JavaScript">';
+echo 'alert("ACCESO DENEGADO")';
+echo '</script>';
+}  
+}           
 }
 ?>
 <!DOCTYPE html>
