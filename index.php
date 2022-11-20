@@ -27,7 +27,8 @@ header('Location: http://www.hostinger.com/');
 break;
                     
 case "ACCESO":		
-header("Location: Cliente/templates/pazysalvo_acceso.php");
+//header("Location: Cliente/templates/pazysalvo_acceso.php");
+echo '<script>window.location="Cliente/templates/pazysalvo_acceso.php"</script>';
 break;
 } 
 }else{
