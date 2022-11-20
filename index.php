@@ -15,15 +15,18 @@ $_SESSION['rol']=$row['rol'];
 if(isset($_SESSION['rol'])){
 switch ($_SESSION['rol']) {
 case "":		
-header("Location: Cliente/templates/sistemas_solicitud_usuario.php");
+//  header("Location: Cliente/templates/sistemas_solicitud_usuario.php");              
+echo '<script>window.location="Cliente/templates/sistemas_solicitud_usuario.php"</script>';
 break;
             
 case "SUPERVISOR":		
-header("Location: Cliente/templates/sistemas_supervisor.php");
+//header("Location: Cliente/templates/sistemas_supervisor.php");
+echo '<script>window.location="Cliente/templates/sistemas_supervisor.php"</script>';
 break;
                     
 case "ADMINISTRADOR":		
-header('Location: http://www.hostinger.com/');
+//header('Location: http://www.hostinger.com/');
+echo '<script>window.location="Cliente/templates/sistemas_admin_pendientes.php"</script>';
 break;
                     
 case "ACCESO":		
