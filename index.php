@@ -53,34 +53,6 @@ include 'Servidor/conexion.php';
         
     }           
 }
-
-
-
-
-    /*PHP VIEJO
-     if(isset($_POST['login'])){
-        $nombre = $_POST['nombre'];
-        $password = $_POST['password'];
-
-        $select = mysqli_query($mysqli, "SELECT * FROM usuarios_registrados WHERE nombre = '$nombre' AND password = '$password'");
-        $row = mysqli_fetch_array($select);
-        
-
-    if(is_array($row)){
-        $_SESSION['nombre'] = $row['nombre'];
-        $_SESSION['password'] = $row['password'];
-
-    }else{
-        echo '<script type ="text/JavaScript">';
-        echo 'alert("ACCESO DENEGADO")';
-        echo '</script>';
-        
-    }if(isset($_SESSION["nombre"])){
-        header("location:templates/sistemas_solicitud_usuario.php");
-    }
-    }
-
-    */
 ?>
 
 <!DOCTYPE html>
