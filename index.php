@@ -72,7 +72,7 @@ include 'Servidor/conexion.php';
         $nombre = trim($_POST['nombre']);
         $password = trim($_POST['password']); // trim elimina espacios en blancos
 
-        $select = mysqli_query($mysqli, "SELECT nombre,password,rol FROM usuarios_registrados WHERE nombre = '$nombre' AND password = '$password'");
+        $select = mysqli_query($db, "SELECT nombre,password,rol FROM usuarios_registrados WHERE nombre = '$nombre' AND password = '$password'");
         $num_row = mysqli_num_rows($select);
         $row = mysqli_fetch_array($select);
         
