@@ -1,25 +1,10 @@
-<?php
+<?php 
+session_start();
+$DB_HOST=$_ENV["DB_HOST"];
+$DB_USER=$_ENV["DB_USER"];
+$DB_PASSWORD=$_ENV["DB_PASSWORD"];
+$DB_NAME=$_ENV["DB_NAME"];
+$DB_PORT=$_ENV["DB_PORT"];
+$db=mysqli_connect("$DB_HOST","$DB_USER","$DB_PASSWORD","$DB_NAME","$DB_PORT");
+?>
 
-/*
-$localhost = 'localhost';
-$usuario = 'danny';
-$password = 'danny';
-$bd =  'sistema_nuevo';
-*/
-
-
-$MYSQLHOST=$_ENV["$MYSQLHOST"];
-$MYSQLUSER=$_ENV["$MYSQLUSER"];
-$MYSQLPASSWORD=$_ENV["$MYSQLPASSWORD"];
-$MYSQLDATABASE=$_ENV["$MYSQLDATABASE"];
-$MYSQLPORT=$_ENV["$MYSQLPORT"];
-
-//archivo mysqli configurado
-$mysqli = mysqli_connect("$MYSQLHOST", "$MYSQLUSER", "$MYSQLPASSWORD", "$MYSQLDATABASE", "$MYSQLPORT");
-
-if(!$mysqli) {
-        echo "ERROR AL CONECTAR A LA BASE DE DATOS";
-}
-else{
-       // echo "CONECTADO A LA BASE DE DATOS";
-}
