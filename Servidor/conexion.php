@@ -12,7 +12,7 @@ $localhost = $_ENV[$localhost];
 $usuario = $_ENV[$usuario];
 $password = $_ENV[$password];
 $bd =  $_ENV[$bd];
-$port =  $_ENV["$port"];
+$port =  $_ENV[$port];
 
 //archivo mysqli configurado
 $mysqli = new mysqli($localhost, $usuario, $password, $bd, $port);
