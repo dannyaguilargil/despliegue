@@ -1,9 +1,5 @@
 <?php
 session_start();
-
-
-
-
 ?>
 
 
