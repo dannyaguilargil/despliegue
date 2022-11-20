@@ -1,71 +1,8 @@
 <?php
 session_start();
 include 'Servidor/conexion.php';
-?>
 
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
-    <link rel="stylesheet" href="Cliente/css/index2.css">
-    <link rel="icon" href="Cliente/imgs/logoimsaludrecortado.ico">
-    <title>Iniciar Sesion</title>
-</head>
-<body">
- 
-
-<div class="centrar">
-       
-            <div class="imagen">
-            <img  src="Cliente/imgs/logocompleto.png"  alt="" style="width: 170px; text-align: center;height: 70px">
-            </div> 
-            <!-- <h3 class="text-center">Iniciar sesion</h3> -->
-                <br> 
-            <div class="textoI">
-            <form action="index.php" method="post">
-            <label class="TT" for="nombre">Usuario</label>
-            <input type="text" class="form-control" name="nombre" id="nombre" required><br>
-            <label class="TT" form="password">Contraseña</label>
-            <input type="password" class="form-control" name="password" id="password" required><br>
-            
-
-
-
-            
-            <div class="boton">
-            <input type="submit" class="text-center btn btn-success" name="login" value="login">
-            </div> <br>
-            <p><a  class="TT1" href="Cliente/templates/login_acceso.php" id="" style="color: grey;">Solicitar usuario</a></p>
-            </form>
-            
-          
-          </div>
-        </div>
-</div>
-
-
-
-<div class="izquierdo">
-    
-    <img class="izquierdoimg" src="Cliente/imgs/izquierdo.gif" alt="">
-</div>
-
-
-<div class="escudo">
-    
-    <img class="escudoverde" src="Cliente/imgs/escudo.gif" alt="">
-</div>
-
-
-
-<?php
-
-
-    if(isset($_POST['login'])){
+  if(isset($_POST['login'])){
         $nombre = trim($_POST['nombre']);
         $password = trim($_POST['password']); // trim elimina espacios en blancos
 
@@ -146,6 +83,63 @@ include 'Servidor/conexion.php';
     */
 ?>
 
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="Cliente/css/index2.css">
+    <link rel="icon" href="Cliente/imgs/logoimsaludrecortado.ico">
+    <title>Iniciar Sesion</title>
+</head>
+<body">
+ 
+
+<div class="centrar">
+       
+            <div class="imagen">
+            <img  src="Cliente/imgs/logocompleto.png"  alt="" style="width: 170px; text-align: center;height: 70px">
+            </div> 
+            <!-- <h3 class="text-center">Iniciar sesion</h3> -->
+                <br> 
+            <div class="textoI">
+            <form action="index.php" method="post">
+            <label class="TT" for="nombre">Usuario</label>
+            <input type="text" class="form-control" name="nombre" id="nombre" required><br>
+            <label class="TT" form="password">Contraseña</label>
+            <input type="password" class="form-control" name="password" id="password" required><br>
+            
+
+
+
+            
+            <div class="boton">
+            <input type="submit" class="text-center btn btn-success" name="login" value="login">
+            </div> <br>
+            <p><a  class="TT1" href="Cliente/templates/login_acceso.php" id="" style="color: grey;">Solicitar usuario</a></p>
+            </form>
+            
+          
+          </div>
+        </div>
+</div>
+
+
+
+<div class="izquierdo">
+    
+    <img class="izquierdoimg" src="Cliente/imgs/izquierdo.gif" alt="">
+</div>
+
+
+<div class="escudo">
+    
+    <img class="escudoverde" src="Cliente/imgs/escudo.gif" alt="">
+</div>
+ 
 
 
 <footer >
