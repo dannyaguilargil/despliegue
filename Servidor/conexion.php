@@ -9,10 +9,10 @@ $bd =  'sistema_nuevo';
 
 
 $MYSQLHOST = $_ENV["$MYSQLHOST"];
-$MYSQLUSER = $_ENV["$usuario"];
-$MYSQLPASSWORD = $_ENV["$password"];
-$MYSQLDATABASE = $_ENV["$bd"];
-$MYSQLPORT = $_ENV["$port"];
+$MYSQLUSER = $_ENV["$MYSQLUSER"];
+$MYSQLPASSWORD = $_ENV["$MYSQLPASSWORD"];
+$MYSQLDATABASE = $_ENV["$MYSQLDATABASE"];
+$MYSQLPORT = $_ENV["$MYSQLPORT"];
 
 //archivo mysqli configurado
 $mysqli = new mysqli("$MYSQLHOST", "$MYSQLUSER", "$MYSQLPASSWORD", "$MYSQLDATABASE", "$MYSQLPORT");
