@@ -47,7 +47,7 @@ session_start();
                     <a class="nav-link" aria-current="page" href="perfil.php">Mi perfil</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="pazysalvo.php" disabled>Paz y salvo</a>
+                    <a class="nav-link" href="pazysalvo_admin.php" disabled>Paz y salvo</a>
                   </li>
 
                   <li class="nav-item">
