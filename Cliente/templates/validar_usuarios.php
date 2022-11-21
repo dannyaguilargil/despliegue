@@ -89,7 +89,7 @@ session_start();
             <?php
             include '../../Servidor/conexion.php';
             $consulta="SELECT * from solicitud_usuario";
-            $resultado=mysqli_query($mysqli,$consulta);
+            $resultado=mysqli_query($db,$consulta);
                     if($resultado){ while($row = $resultado->fetch_array()){
                         $nombrer = $row['nombre'];
                         
