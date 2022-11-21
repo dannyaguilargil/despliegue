@@ -14,8 +14,7 @@ if($resultado>0){
    // header("Location:../Vista/vuelos.html");
 //alerta de que se agrego el registro
 
-
-header("Location:../Cliente/templates/gestion_usuario.php");
+echo '<script>window.location="../Cliente/templates/gestion_usuario.php"</script>';
 echo '<script type ="text/JavaScript">';  
 echo 'alert("REGISTRO ELIMINADO")';  
 echo '</script>';  
