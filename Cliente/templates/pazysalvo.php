@@ -156,7 +156,7 @@ $resultado=mysqli_query($db,$consulta);
               $rfid='';
               // CODIGO PHP PARA HACER LA CONSULTA Y REVISAR SI LOS EQUIPOS Y RFID FUERON GENERADOS
               $consulta="SELECT * from pazysalvo_aprobar WHERE nombre = '$tomador';";
-              $resultado=mysqli_query($mysqli,$consulta);
+              $resultado=mysqli_query($db,$consulta);
               if($resultado){ while($row = $resultado->fetch_array()){
                $rfid = $row['rfid'];
                $equipos = $row['equipos'];
