@@ -12,7 +12,7 @@ $email = $_POST["email"];
 $administrador = $_POST["administrador"];
 
 $sql="INSERT INTO usuarios_registrados (nombre,cedula,cargo,fechafinalcontrato,supervisor,email,rol,password) VALUES('$nombre',$cedula,'$cargo','$fechafinalcontrato','$supervisor','$email','$administrador',cedula)";
-$resultado=$mysqli ->query($sql);
+$resultado=$db ->query($sql);
 
 /*
 LUEGO DE HACER REGISTRO DEBE ELIMINARLOS DEL STANDBY
@@ -37,11 +37,13 @@ if($resultado>0){
 
    //ELIMINARLO DEL STANDBY 
    $sql2="DELETE FROM solicitud_usuario WHERE cedula = $cedula;";
-   $resultado=$mysqli ->query($sql2);
+   $resultado=$db ->query($sql2);
     //ELIMINARLO DEL STANDBY
 
-
-    header("Location:../Cliente/templates/validar_usuarios.php");
+   
+ 
+//header("Location:../Cliente/templates/validar_usuarios.php");
+echo '<script>window.location="../Cliente/templates/validar_usuarios.php"</script>';
 //echo '<script type ="text/JavaScript">';  
 //echo 'alert("REGISTRO AGEGADO")';  
 //echo '</script>';  
