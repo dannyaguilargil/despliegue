@@ -91,7 +91,7 @@ session_start();
             //codigo php para carga datos del perfil y luego ser modificados
             
             $consulta="SELECT nombre,cargo,fechafinalcontrato,supervisor from usuarios_registrados WHERE nombre = '$tomador';";
-            $resultado=mysqli_query($mysqli,$consulta);
+            $resultado=mysqli_query($db,$consulta);
                     if($resultado){ while($row = $resultado->fetch_array()){
                         $nombrer = $row['nombre'];
                         $cargor = $row['cargo'];
