@@ -30,7 +30,7 @@
                     <a class="nav-link" href="pazysalvo_admin.php" disabled>Paz y salvo</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="perfil.php" disabled>Mi perfil</a>
+                    <a class="nav-link" href="perfil_admin.php" disabled>Mi perfil</a>
                   </li>
                 </ul>
               
