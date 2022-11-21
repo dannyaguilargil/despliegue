@@ -131,7 +131,7 @@ session_start();
   
   
   $consulta2="SELECT fechafinalcontrato from usuarios_registrados WHERE cedula = $cedular;";
-  $resultado2=mysqli_query($mysqli,$consulta2);
+  $resultado2=mysqli_query($db,$consulta2);
       if($resultado2){ while($row = $resultado2->fetch_array()){
          $fechafinalcontrator = $row['fechafinalcontrato'];
          }
