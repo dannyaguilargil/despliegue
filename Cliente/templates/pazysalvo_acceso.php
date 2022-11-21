@@ -83,7 +83,7 @@ $nombre='';
 $cedula='';
 
 $consulta="SELECT * from pazysalvo_solicitud;";
-$resultado=mysqli_query($mysqli,$consulta);
+$resultado=mysqli_query($db,$consulta);
 if($resultado){ while($row = $resultado->fetch_array()){
  $nombre = $row['nombre'];
  $cedula = $row['cedula'];
