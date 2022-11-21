@@ -128,7 +128,7 @@ session_start();
                 <?php include '../../Servidor/conexion.php'; ?>
                 
                 <?php $consulta="SELECT * from sistema_validado_supervisor;";
-                $resultado=mysqli_query($mysqli,$consulta);
+                $resultado=mysqli_query($db,$consulta);
                 if($resultado){ while($row = $resultado->fetch_array()){
                 $nombrer = $row['nombre'];
                 $cedular = $row['cedula'];
