@@ -1,7 +1,7 @@
 <?php
 
 
-include 'conexion2.php';
+include 'conexion.php';
 
 /* Un arreglo de las columnas a mostrar en la tabla */
 $columns = ['nombre', 'cedula', 'cargo', 'fechafinalcontrato', 'supervisor', 'email', 'rol'];
@@ -9,7 +9,7 @@ $columns = ['nombre', 'cedula', 'cargo', 'fechafinalcontrato', 'supervisor', 'em
 /* Nombre de la tabla */
 $table = "usuarios_registrados";
 
-$campo = isset($_POST['campo']) ? $conn->real_escape_string($_POST['campo']) : null;
+$campo = isset($_POST['campo']) ? $bd->real_escape_string($_POST['campo']) : null;
 
 
 /* Filtrado */
@@ -31,7 +31,7 @@ if ($campo != null) {
 $sql = "SELECT " . implode(", ", $columns) . "
 FROM $table
 $where ";
-$resultado = $conn->query($sql);
+$resultado = $bd->query($sql);
 $num_rows = $resultado->num_rows;
 
 
