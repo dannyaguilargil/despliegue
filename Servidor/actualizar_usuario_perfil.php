@@ -23,7 +23,8 @@ if($resultado>0){
 //echo 'alert("REGISTRO AGEGADO")';  
 //echo '</script>';  
 //header("Location:../Cliente/templates/perfil.php");
-header("Location:logout.php");
+//header("Location:logout.php");
+echo '<script>window.location="logout.php"</script>';
 
 //exit();
 
