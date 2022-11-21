@@ -64,7 +64,7 @@ session_start();
 
 
               <div class="user" style="color: white">
-              ACCESO! <?php echo $_SESSION['nombre']; ?>
+              Bienvenido! <?php echo $_SESSION['nombre']; ?>
              <?php $tomador=$_SESSION['nombre'] ?>
               </div>
 
