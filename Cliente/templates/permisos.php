@@ -159,7 +159,7 @@ $tomador='';
             INNER JOIN sistema_validado_admin ON pazysalvo_aprobar.cedula=sistema_validado_admin.cedula
             INNER JOIN usuarios_registrados ON sistema_validado_admin.cedula=usuarios_registrados.cedula;";
 
-            $resultado=mysqli_query($mysqli,$consulta);
+            $resultado=mysqli_query($db,$consulta);
                     if($resultado){ while($row = $resultado->fetch_array()){
                         $nombre = $row['nombre'];
                         $cedula = $row['cedula'];
