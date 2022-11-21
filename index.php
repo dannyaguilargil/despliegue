@@ -14,7 +14,7 @@ $_SESSION['nombre']=$row['nombre'];
 $_SESSION['rol']=$row['rol'];
 if(isset($_SESSION['rol'])){
 switch ($_SESSION['rol']) {
-case "":		
+case "USUARIO":		
 //  header("Location: Cliente/templates/sistemas_solicitud_usuario.php");              
 echo '<script>window.location="Cliente/templates/sistemas_solicitud_usuario.php"</script>';
 break;
