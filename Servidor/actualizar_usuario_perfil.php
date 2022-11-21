@@ -14,7 +14,7 @@ $password = $_POST["password"];
 $sql="UPDATE usuarios_registrados SET nombre='$nombre',cargo='$cargo',fechafinalcontrato='$fechafinalcontrato',supervisor='$supervisor',password='$password' WHERE nombre = '$nombre';";
 
 
-$resultado=$mysqli ->query($sql);
+$resultado=$db ->query($sql);
 
 if($resultado>0){
    // header("Location:../Vista/vuelos.html");
