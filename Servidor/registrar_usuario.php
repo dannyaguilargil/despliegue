@@ -24,7 +24,7 @@ $rol = $_POST["rol"];
 
 $sql="INSERT INTO usuarios_registrados VALUES('$nombre','$cargo','$fechafinalcontrato','$cedula','$supervisor','$email','$administrador',cedula)";
 
-$resultado=$mysqli ->query($sql);
+$resultado=$db ->query($sql);
 
 if($resultado>0){
    // header("Location:../Vista/vuelos.html");
