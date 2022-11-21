@@ -36,7 +36,7 @@
               <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                   <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="perfil.php">Mi perfil</a>
+                    <a class="nav-link" aria-current="page" href="perfil_admin.php">Mi perfil</a>
                   </li>
                  
 
