@@ -106,7 +106,7 @@ session_start();
                 //CODIGO PHP DE CONSULTAS
                 //PRIMERO HAGO LA VALIDACION CON LA CEDULA
                 $consulta="SELECT nombre,cedula,cargo,email,supervisor from usuarios_registrados WHERE nombre = '$tomador';";
-                $resultado=mysqli_query($mysqli,$consulta);
+                $resultado=mysqli_query($db,$consulta);
                         if($resultado){ while($row = $resultado->fetch_array()){
                             $nombrer = $row['nombre'];
                             $cedular = $row['cedula'];
