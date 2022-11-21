@@ -11,7 +11,7 @@ $dnuevo = $_POST["dnuevo"];
 $sql="UPDATE usuarios_registrados SET $cactualizar='$dnuevo' WHERE cedula = $cedula;";
 
 
-$resultado=$mysqli ->query($sql);
+$resultado=$db ->query($sql);
 
 if($resultado>0){
    // header("Location:../Vista/vuelos.html");
