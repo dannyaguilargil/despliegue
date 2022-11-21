@@ -19,7 +19,7 @@ if($resultado>0){
 //echo '<script type ="text/JavaScript">';  
 //echo 'alert("REGISTRO AGEGADO")';  
 //echo '</script>';  
-header("Location:../Cliente/templates/gestion_usuario.php");
+echo '<script>window.location="../Cliente/templates/gestion_usuario.php"</script>';
 
 //exit();
 
