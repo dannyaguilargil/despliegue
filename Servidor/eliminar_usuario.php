@@ -8,7 +8,7 @@ $cedula = $_POST["cedula"];
 
 $sql="DELETE FROM usuarios_registrados WHERE cedula = $cedula;";
 
-$resultado=$mysqli ->query($sql);
+$resultado=$db ->query($sql);
 
 if($resultado>0){
    // header("Location:../Vista/vuelos.html");
