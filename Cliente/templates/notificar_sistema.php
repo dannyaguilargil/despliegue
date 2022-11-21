@@ -82,7 +82,7 @@ try {
             Sistemas
           </a>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#" style="">Sistemas aprobados</a></li>
+            <li><a class="dropdown-item" href="sistemas_admin_aprobados.php" style="">Sistemas aprobados</a></li>
             <li><a class="dropdown-item" href="sistemas_admin_pendientes.php">Sistemas pendientes</a></li>
             <li><a class="dropdown-item" href="permisos.php">Revisar permisos</a></li>
             <li><a class="dropdown-item" href="notificar_sistema.php">Notificar sistema aprobado</a></li>
