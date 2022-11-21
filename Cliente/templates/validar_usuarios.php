@@ -30,7 +30,7 @@ session_start();
               <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                   <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="sistemas_admin.php">Sistemas</a>
+                    <a class="nav-link" aria-current="page" href="sistemas_admin_pendientes.php">Sistemas</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="pazysalvo_acceso.php" disabled>Paz y salvo</a>
