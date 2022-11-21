@@ -106,7 +106,7 @@ session_start();
   
    
    $consulta="SELECT * from solicitud_sistema WHERE supervisor = '$tomador';";
-   $resultado=mysqli_query($mysqli,$consulta);
+   $resultado=mysqli_query($db,$consulta);
        if($resultado){ while($row = $resultado->fetch_array()){
           $nombrer = $row['nombre'];
           $cedular = $row['cedula'];
