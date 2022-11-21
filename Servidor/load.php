@@ -9,7 +9,7 @@ $columns = ['nombre', 'cedula', 'cargo', 'fechafinalcontrato', 'supervisor', 'em
 /* Nombre de la tabla */
 $table = "usuarios_registrados";
 
-$campo = isset($_POST['campo']) ? $bd->real_escape_string($_POST['campo']) : null;
+$campo = isset($_POST['campo']) ? $db->real_escape_string($_POST['campo']) : null;
 
 
 /* Filtrado */
@@ -31,7 +31,7 @@ if ($campo != null) {
 $sql = "SELECT " . implode(", ", $columns) . "
 FROM $table
 $where ";
-$resultado = $bd->query($sql);
+$resultado = $db->query($sql);
 $num_rows = $resultado->num_rows;
 
 
