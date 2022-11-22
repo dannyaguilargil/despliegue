@@ -27,7 +27,7 @@ if($resultado>0){
    // header("Location:../Vista/vuelos.html");
 
 //echo header("Location:../Cliente/templates/sistemas_solicitud_usuario.php");
-echo '<script>window.location="Cliente/templates/sistemas_solicitud_usuario.php"</script>';
+echo '<script>window.location="../Cliente/templates/sistemas_solicitud_usuario.php"</script>';
 
 
 //exit();
