@@ -50,3 +50,20 @@
     width: 400px;
     height: 400px;
 }
+@media screen and (max-width: 480px){
+    .escudo{
+        display: none;
+    }
+    .escudoverde{
+        display: none;
+    }
+    .izquierdo{
+        display: none;
+    }
+    .izquierdoimg{
+        display: none;
+    }
+    footer{
+        display: none;
+    }
+}
