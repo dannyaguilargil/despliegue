@@ -63,9 +63,9 @@ session_start();
             
 
 
-              <div class="user" style="color: white">
-              Bienvenido! <?php echo $_SESSION['nombre']; ?>
-             <?php $tomador=$_SESSION['nombre'] ?>
+             <div class="user" style="color: white">
+              <span class="typed"></span>  <?php echo $_SESSION['nombre']; ?>
+               <?php $tomador=$_SESSION['nombre'] ?>
               </div>
 
           
@@ -252,7 +252,8 @@ session_start();
 
       
      
-
+       <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+      <script src="../js/main2.js"></script>
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     </body>
     <!-- SI EL SISTEMA FUE VALIDADO DEBERIA GENERAR UNA ALERTA PARA NOTIFICARLE, NOTIFICARLE ES OPCIONAL-->
