@@ -8,7 +8,7 @@ $tipodocumento = $_POST["tipodocumento"];
 $cedula = $_POST["cedula"]; 
 $lugarexpedicion = $_POST["lugarexpedicion"];
 $sexo = $_POST["sexo"];
-$telefonofijo = $_POST["telefonofijo"];
+$telefono = $_POST["telefono"];
 $celular = $_POST["celular"];
 $direccion = $_POST["direccion"];
 $cargo = $_POST["cargo"];
@@ -19,7 +19,7 @@ $tiposolicitud = $_POST["tiposolicitud"];
 $aplicativo = $_POST["aplicativo"];
 $observaciones = $_POST["observaciones"];
 
-$sql="INSERT INTO solicitud_sistema (nombre,tipodocumento,cedula,lugarexpedicion,sexo,telefono,celular,direccion,cargo,supervisor,correo,ubicacion_laboral,tiposolicitud,aplicativo,observaciones) VALUES('$nombre','$tipodocumento',$cedula,'$lugarexpedicion','$sexo',$telefonofijo,$celular,'$direccion','$cargo','$supervisor','$correo','$ubicacion_laboral','$tiposolicitud','$aplicativo','$observaciones')";
+$sql="INSERT INTO solicitud_sistema (nombre,tipodocumento,cedula,lugarexpedicion,sexo,telefono,celular,direccion,cargo,supervisor,correo,ubicacion_laboral,tiposolicitud,aplicativo,observaciones) VALUES('$nombre','$tipodocumento',$cedula,'$lugarexpedicion','$sexo',$telefono,$celular,'$direccion','$cargo','$supervisor','$correo','$ubicacion_laboral','$tiposolicitud','$aplicativo','$observaciones')";
 
 $resultado=$db->query($sql);
 
