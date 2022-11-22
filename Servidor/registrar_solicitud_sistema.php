@@ -21,7 +21,7 @@ $observaciones = $_POST["observaciones"];
 
 $sql="INSERT INTO solicitud_sistema (nombre,tipodocumento,cedula,lugarexpedicion,sexo,telefono,celular,direccion,cargo,supervisor,correo,ubicacion_laboral,tiposolicitud,aplicativo,observaciones) VALUES('$nombre','$tipodocumento',$cedula,'$lugarexpedicion','$sexo',$telefono,$celular,'$direccion','$cargo','$supervisor','$correo','$ubicacion_laboral','$tiposolicitud','$aplicativo','$observaciones')";
 
-$resultado=$mysqli ->query($sql);
+$resultado=$db ->query($sql);
 
 if($resultado>0){
    // header("Location:../Vista/vuelos.html");
