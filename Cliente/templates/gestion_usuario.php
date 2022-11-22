@@ -232,7 +232,7 @@
                         <thead>
                             <th>NOMBRE</th>
                             <th>CEDULA</th>
-                            <th>SUPERVISOR</th>
+                            <th>CARGO</th>
                             <th>FECHAFINALCONTRATO</th>
                             <th>SUPERVISOR</th>
                             <th>EMAIL</th>
