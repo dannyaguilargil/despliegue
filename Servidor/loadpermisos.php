@@ -1,7 +1,7 @@
 <?php
 
 
-include 'conexion2.php';
+include 'conexion.php';
 
 /* Un arreglo de las columnas a mostrar en la tabla */
 $columns = ['nombre', 'cedula', 'rfid', 'equipos', 'revocar_permisos'];
@@ -9,7 +9,7 @@ $columns = ['nombre', 'cedula', 'rfid', 'equipos', 'revocar_permisos'];
 /* Nombre de la tabla */
 $table = "pazysalvo_aprobar";
 
-$campo = isset($_POST['campo']) ? $conn->real_escape_string($_POST['campo']) : null;
+$campo = isset($_POST['campo']) ? $db->real_escape_string($_POST['campo']) : null;
 
 
 /* Filtrado */
@@ -31,7 +31,7 @@ if ($campo != null) {
 $sql = "SELECT " . implode(", ", $columns) . "
 FROM $table
 $where ";
-$resultado = $conn->query($sql);
+$resultado = $db->query($sql);
 $num_rows = $resultado->num_rows;
 
 
