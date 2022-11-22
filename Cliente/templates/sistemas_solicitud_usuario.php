@@ -150,7 +150,7 @@ session_start();
 
                 <div class="col">
                 <label for="telefono" class="emerge">Telefono fijo:</label> <br>
-                <input type="text" name="telefono" id="telefono" class="emerge" required> 
+                <input type="text" name="telefonofijo" id="telefonofijo" class="emerge" required> 
                 </div>
                 </div>
 
