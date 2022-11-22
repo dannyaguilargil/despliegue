@@ -66,4 +66,17 @@
     footer{
         display: none;
     }
+    .centrar{
+        text-align: center;
+    }
+    .imagen{
+        /* display: flex; */
+        text-align: center;
+    }
+    .textoI{
+       text-align: center;
+    }
+    .boton{
+        text-align: center;
+    }
 }
