@@ -15,8 +15,10 @@ $resultado=$db ->query($sql);
 if($resultado>0){
     $sql2="DELETE FROM pazysalvo_solicitud WHERE cedula = $cedula;";
     $resultado=$db ->query($sql2);
-
-header("Location:../Cliente/templates/pazysalvo_admin.php");
+    
+    
+//echo '<script>window.location="logout.php"</script>';
+echo '<script>window.location="logout.php"</script>';
 
 //exit();
 
