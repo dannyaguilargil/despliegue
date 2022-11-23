@@ -13,14 +13,14 @@ $observaciones_supervisor = $_POST["observaciones_supervisor"];
 
 $sql="INSERT INTO sistema_validado_supervisor(nombre,cedula,cargo,tiposolicitud,aplicativo,observaciones,observaciones_supervisor) VALUES('$nombre',$cedula,'$cargo','$tiposolicitud','$aplicativo','$observaciones','$observaciones_supervisor')";
 
-$resultado=$mysqli ->query($sql);
+$resultado=$db ->query($sql);
 
 if($resultado>0){
    // header("Location:../Vista/vuelos.html");
 
     //ELIMINA LA SOLICITUD
     $sql2="DELETE FROM solicitud_sistema WHERE cedula = $cedula;";
-    $resultado2=$mysqli ->query($sql2);
+    $resultado2=$db ->query($sql2);
     //
 
 echo header("Location:../Cliente/templates/sistemas_supervisor.php");
