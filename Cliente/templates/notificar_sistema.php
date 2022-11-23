@@ -188,7 +188,7 @@ try {
 
                 <div class="col">
                 <label for="cedula" class="emerge">Correo receptor:</label> <br>
-                <input type="email" name="emailreceptor" id="emailreceptor" class="emerge" value="<?php echo $emair?>"> 
+                <input type="email" name="emailreceptor" id="emailreceptor" class="emerge" value="SISTEMAS.ACCESO@IMSALUD.GOV.CO"> 
                 </div>
 
 
