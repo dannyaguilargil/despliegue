@@ -23,8 +23,8 @@ if($resultado>0){
     $resultado2=$db ->query($sql2);
     //
 
-echo header("Location:../Cliente/templates/sistemas_supervisor.php");
-
+//echo header("Location:../Cliente/templates/sistemas_supervisor.php");
+echo '<script>window.location="../Cliente/templates/sistemas_supervisor.php"</script>';
 
 //exit();
 
