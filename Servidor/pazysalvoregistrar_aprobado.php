@@ -10,11 +10,11 @@ $equipos = $_POST["equipos"];
 
 
 $sql="UPDATE pazysalvo_aprobar SET rfid='$rfid',equipos='$equipos' WHERE cedula = $cedula;";
-$resultado=$mysqli ->query($sql);
+$resultado=$db ->query($sql);
 
 if($resultado>0){
     $sql2="DELETE FROM pazysalvo_solicitud WHERE cedula = $cedula;";
-    $resultado=$mysqli ->query($sql2);
+    $resultado=$db ->query($sql2);
 
 header("Location:../Cliente/templates/pazysalvo_admin.php");
 
