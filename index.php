@@ -84,11 +84,13 @@ echo '</script>';
     
     <img class="escudoverde" src="Cliente/imgs/escudo.gif" alt="">
 </div>
+<!--      quite el footer de manera provisional                                                           
 <footer >      
 <div class="container ultimo">
 <img class="fondo" src="Cliente/imgs/footer.png" alt="" srcset="">
 </div>      
 </footer>
+ -->
 </body>
 </html>
 
