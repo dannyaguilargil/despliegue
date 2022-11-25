@@ -103,12 +103,11 @@ session_start();
                         $supervisorr = '';
                    ?>   
 
-        <?php if($nombrer==''){
-            ?><center style="color: grey;"> <b> <?php echo "No hay solicitudes actuales"; }?> </b>
+       
             
             </center> 
             <div class="container form-control form-control" >
-            <h5 class="centrar">Solicitud de sistemas</h5>
+            
 
 
             <form action="../../Servidor/registrar_solicitud_admin.php" method="POST">
@@ -143,7 +142,9 @@ session_start();
                 ?>
 
 
-
+                <?php if($nombrer==''){
+                ?><center style="color: grey;"> <b> <?php echo "No hay solicitudes actuales"; }?> </b>
+                <h5 class="centrar">Solicitud de sistemas</h5>
 
                 <fieldset><b>Informacion general del colaborador</b></fieldset> 
                 <div class="row">
