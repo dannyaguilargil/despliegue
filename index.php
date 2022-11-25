@@ -56,6 +56,7 @@ echo '</script>';
     <title>Iniciar Sesion</title>
 </head>
 <body">
+      <br> <br>
 <div class="centrar">
        
             <div class="imagen">
